@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "100px",
   },
   text: {
-    fontFamily: "Piazzolla",
+    fontFamily: "Comfortaa",
     fontSize: "36px",
     color: "#fff",
   },

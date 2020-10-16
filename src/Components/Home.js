@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
   },
   title: {
-    fontFamily: "Piazzolla",
-    fontSize: "48px",
+    fontFamily: "Comfortaa",
+    fontSize: "42px",
     color: "#fff",
   },
   image: {
@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
+    fontFamily: "Comfortaa",
     "&:hover": {
       backgroundColor: "black",
       color: "#fff",
