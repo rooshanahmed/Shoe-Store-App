@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
+    '&:hover':{
+        backgroundColor: "black",
+        color: "#fff",
+    },
   },
 }));
 

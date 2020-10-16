@@ -35,7 +35,14 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWapper}>
-          <img src={logo} alt="logo" className={classes.logo} />
+          <img
+            src={logo}
+            alt="logo"
+            className={classes.logo}
+            onClick={() => {
+              navigate("/");
+            }}
+          />
           <Button
             disableTouchRipple
             className={classes.button}
