@@ -2,6 +2,7 @@ import React from "react";
 import { Button, makeStyles } from "@material-ui/core";
 import shoe from "../Images/shoe.png";
 import { useNavigate } from "react-router-dom";
+import Landing from "./Landing";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
-    '&:hover':{
-        backgroundColor: "black",
-        color: "#fff",
+    "&:hover": {
+      backgroundColor: "black",
+      color: "#fff",
     },
   },
 }));
@@ -41,22 +42,25 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className={classes.root}>
-      <div>
-        <h2 className={classes.title}>Cercle Shoe Store</h2>
-        <Button
-          disableTouchRipple
-          variant="contained"
-          className={classes.button}
-          onClick={() => {
-            navigate("products");
-          }}
-        >
-          Shop Now!!
-        </Button>
+    <>
+      <div className={classes.root}>
+        <div>
+          <h2 className={classes.title}>Cercle Shoe Store</h2>
+          <Button
+            disableTouchRipple
+            variant="contained"
+            className={classes.button}
+            onClick={() => {
+              navigate("products");
+            }}
+          >
+            Shop Now!!
+          </Button>
+        </div>
+        <img src={shoe} alt="shoe" className={classes.image} />
       </div>
-      <img src={shoe} alt="shoe" className={classes.image} />
-    </div>
+      <Landing />
+    </>
   );
 };
 
