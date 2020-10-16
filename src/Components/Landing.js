@@ -13,13 +13,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
+    maxWidth: "100%",
   },
   image: {
     height: "400px",
     marginLeft: "100px",
   },
   text: {
-    fontFamily: "Chilanka",
+    fontFamily: "Piazzolla",
     fontSize: "36px",
     color: "#fff",
   },

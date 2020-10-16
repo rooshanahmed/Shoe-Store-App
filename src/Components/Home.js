@@ -13,9 +13,10 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     justifyContent: "center",
     alignItems: "center",
+    maxWidth: "100%",
   },
   title: {
-    fontFamily: "Chilanka",
+    fontFamily: "Piazzolla",
     fontSize: "48px",
     color: "#fff",
   },
