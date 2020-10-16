@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import ProductsHead from "./ProductsHead";
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -16,6 +17,8 @@ const ProductsListing = ({ data }) => {
   const classes = useStyles();
 
   return (
+    <>
+    <ProductsHead />
     <div className={classes.root}>
       <Grid container spacing={2} className={classes.gridItem} justify="center">
         {data.map((shoe) => {
@@ -44,6 +47,7 @@ const ProductsListing = ({ data }) => {
         })}
       </Grid>
     </div>
+    </>
   );
 };
 
