@@ -82,7 +82,12 @@ const Header = () => {
           >
             Contact Us
           </Button>
-          <IconButton className={classes.icon}>
+          <IconButton
+            className={classes.icon}
+            onClick={() => {
+              navigate("cart");
+            }}
+          >
             <AddShoppingCartIcon />
           </IconButton>
         </Toolbar>
