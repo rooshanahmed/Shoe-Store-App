@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginLeft: "25px",
     color: "white",
+    fontFamily: "Comfortaa",
   },
   icon: {
     color: "#fff",
