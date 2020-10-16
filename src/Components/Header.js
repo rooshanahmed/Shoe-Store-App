@@ -1,5 +1,12 @@
 import React from "react";
-import { AppBar, Button, makeStyles, Toolbar } from "@material-ui/core";
+import {
+  AppBar,
+  Button,
+  IconButton,
+  makeStyles,
+  Toolbar,
+} from "@material-ui/core";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import logo from "./logo-white.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -24,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginLeft: "25px",
     color: "white",
+  },
+  icon: {
+    color: "#fff",
+    marginLeft: "400px",
+    display: "flex",
   },
 }));
 
@@ -70,6 +82,9 @@ const Header = () => {
           >
             Contact Us
           </Button>
+          <IconButton className={classes.icon}>
+            <AddShoppingCartIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </div>
