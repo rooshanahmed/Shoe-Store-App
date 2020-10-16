@@ -16,9 +16,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="products" element={<Products />}>
           <Route path="/" element={<ProductsListing data={data} />} />
-          <Route path=":productId" element={<ProductDetails data={data} />} />
+          {/* <Route path=":productId" element={<ProductDetails data={data} />} /> */}
         </Route>
-        <Route path="cart" element={<ShoppingCart />} />
+        {/* <Route path="cart" element={<ShoppingCart />} /> */}
       </Routes>
     </div>
   );
