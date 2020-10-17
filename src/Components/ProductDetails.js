@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Grid, makeStyles, Paper } from "@material-ui/core";
+import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
 import { useParams } from "react-router-dom";
-import Button from "./Button";
+import CartButton from "./Button";
 
 const useStyles = makeStyles((theme) => ({}));
 
@@ -63,7 +63,7 @@ const ProductDetails = ({ data }) => {
           <Typography className={classes.description}>
             {dataItem.description}
           </Typography>
-          <Button dataItem={dataItem} />
+          <CartButton dataItem={dataItem} />
         </Grid>
       </Grid>
     </div>

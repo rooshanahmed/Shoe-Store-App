@@ -3,13 +3,13 @@ import { makeStyles, Button, Tooltip } from "@material-ui/core";
 import { GlobalContext } from "../Context/GlobalContext";
 
 const useStyles = makeStyles((theme) => ({
-  btn:{
+  btn: {
     margin: "0 auto",
     display: "block",
   },
 }));
 
-const Button = ({ dataItem }) => {
+const CartButton = ({ dataItem }) => {
   const classes = useStyles();
   const { state, addItem } = useContext(GlobalContext);
   const isTrue = state.find((item) => item.id === dataItem.id);
@@ -20,8 +20,7 @@ const Button = ({ dataItem }) => {
       onClick={() => addItem(dataItem)}
       className={classes.btn}
     >
-      {" "}
-      Add To Cart{" "}
+      Add To Cart
     </Button>
   ) : (
     <Tooltip
@@ -36,11 +35,10 @@ const Button = ({ dataItem }) => {
         onClick={() => addItem(dataItem)}
         className={classes.btn}
       >
-        {" "}
-        Add To Cart{" "}
-      </Button>{" "}
+        Add To Cart
+      </Button>
     </Tooltip>
   );
 };
 
-export default Button;
+export default CartButton;
