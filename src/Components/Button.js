@@ -6,6 +6,12 @@ const useStyles = makeStyles((theme) => ({
   btn: {
     margin: "0 auto",
     display: "block",
+    background: "black",
+    color: "#fff",
+    "&:hover": {
+      background: "#1A2F43",
+      color: "#fff",
+    },
   },
 }));
 
@@ -19,6 +25,7 @@ const CartButton = ({ dataItem }) => {
       variant="contained"
       onClick={() => addItem(dataItem)}
       className={classes.btn}
+      disableRipple
     >
       Add To Cart
     </Button>
@@ -34,6 +41,7 @@ const CartButton = ({ dataItem }) => {
         variant="contained"
         onClick={() => addItem(dataItem)}
         className={classes.btn}
+        disableRipple
       >
         Add To Cart
       </Button>
