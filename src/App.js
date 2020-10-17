@@ -9,11 +9,13 @@ import ProductDetails from "./Components/ProductDetails";
 import Footer from "./Components/Footer";
 import data from "./data";
 import ContactUs from "./Components/ContactUs";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div>
       <CssBaseline />
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
