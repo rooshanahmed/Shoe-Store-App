@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Products from "./Components/Products";
 import ProductsListing from "./Components/ProductsListing";
 import ProductDetails from "./Components/ProductDetails";
+import Footer from "./Components/Footer";
 import data from "./data";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         </Route>
         {/* <Route path="cart" element={<ShoppingCart />} /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }
