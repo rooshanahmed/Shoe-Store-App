@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import data from "./data";
 import ContactUs from "./Components/ContactUs";
 import ScrollToTop from "./Components/ScrollToTop";
+import ShoppingCart from "./Components/Cart/ShoppingCart";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path=":productId" element={<ProductDetails data={data} />} />
         </Route>
         <Route path="contact-us" element={<ContactUs />} />
-        {/* <Route path="cart" element={<ShoppingCart />} /> */}
+        <Route path="cart" element={<ShoppingCart />} />
       </Routes>
       <Footer />
     </div>

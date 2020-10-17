@@ -44,7 +44,7 @@ const Summary = ({ productsCount, total, payment }) => {
         className={classes.btn}
         onClick={() => {
           swal(
-            "Checkout Succesfullay!",
+            "Checkout Successfully!",
             `You have Purchased ${productsCount} ${item}!`,
             "success"
           );

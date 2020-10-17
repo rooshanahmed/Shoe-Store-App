@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   AppBar,
   Button,
   IconButton,
   makeStyles,
   Toolbar,
+  Badge
 } from "@material-ui/core";
-import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
+import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
 import logo from "./logo-white.svg";
 import { useNavigate } from "react-router-dom";
+import { GlobalContext } from "../Context/GlobalContext";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
@@ -43,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const navigate = useNavigate();
   const classes = useStyles();
+  const { state } = useContext(GlobalContext);
+  const itemsCount = state.lenght;
 
   return (
     <div className={classes.root}>
@@ -89,7 +93,9 @@ const Header = () => {
               navigate("cart");
             }}
           >
-            <AddShoppingCartIcon />
+            <Badge badgeContent={itemsCount} color="secondary">
+            <ShoppingCartRoundedIcon />
+            </Badge>
           </IconButton>
         </Toolbar>
       </AppBar>

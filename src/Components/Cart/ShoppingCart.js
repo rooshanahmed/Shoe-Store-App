@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import CartCard from "./CartCard";
-import { GlobalContext } from "../../context/GlobalContext";
+import { GlobalContext } from "../../Context/GlobalContext";
 import Summary from "./Summary";
 
 const useStyles = makeStyles(() => ({
