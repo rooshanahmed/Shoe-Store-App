@@ -95,7 +95,7 @@ const ProductDetails = ({ data }) => {
                 variant="subtitle1"
                 style={{ textAlign: "center", color: "#fff" }}
               >
-                4 Colors Avialable
+                4 Colors Available
               </Typography>
             </Grid>
             {dataItem.images.map((image, index) => (

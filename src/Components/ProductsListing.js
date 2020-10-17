@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
   cardContent:{
     fontFamily: "Comfortaa",
   },
+  mainRoot:{
+    backgroundColor: "#3C52A3",
+    display: "block",
+  }
 }));
 
 const ProductsListing = ({ data }) => {
@@ -49,7 +53,7 @@ const ProductsListing = ({ data }) => {
   }, []);
 
   return (
-    <>
+    <div className={classes.mainRoot}>
       <ProductsHead />
       <Typist className={classes.type} cursor={{ show: false }}>
         <Typist.Delay ms={1500} />
@@ -92,7 +96,7 @@ const ProductsListing = ({ data }) => {
           })}
         </Grid>
       </div>
-    </>
+    </div>
   );
 };
 

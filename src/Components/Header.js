@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: "#fff",
-    marginLeft: "400px",
+    marginLeft: "auto",
     display: "flex",
   },
 }));
