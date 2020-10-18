@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
     // minWidth: "100%",
     backgroundColor: "#1A2F43",
+    // backgroundColor: "black",
     backgroundSize: "cover",
     display: "flex",
     justifyContent: "center",

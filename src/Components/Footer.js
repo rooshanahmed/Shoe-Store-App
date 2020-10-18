@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     fontSize: "24px",
     textAlign: "center",
+    padding: "20px",
   },
   subHead: {
     fontSize: "20px",
