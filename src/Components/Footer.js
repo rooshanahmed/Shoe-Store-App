@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles, Typography, TextField, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
-import visa from "payment-icons/min/mono/visa.svg";
-import alipay from "payment-icons/min/mono/alipay.svg";
-import amex from "payment-icons/min/mono/amex.svg";
-import mastercard from "payment-icons/min/mono/mastercard.svg";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import visa from "payment-icons/min/single/visa.svg";
+import alipay from "payment-icons/min/single/alipay.svg";
+import amex from "payment-icons/min/single/amex.svg";
+import mastercard from "payment-icons/min/single/mastercard.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -116,7 +116,7 @@ const Footer = () => {
           <FaInstagram />
         </Link>
         <Link to="/" className={classes.link}>
-          <FaYoutube />
+          <FaTwitter />
         </Link>
       </div>
       <Typography className={classes.text}>You can pay us by</Typography>
