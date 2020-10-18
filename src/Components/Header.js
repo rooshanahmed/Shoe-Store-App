@@ -44,9 +44,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
-  const navigate = useNavigate();
   const { state } = useContext(GlobalContext);
-  const itemsCount = state.lenght;
+  const itemsCount = state.length;
+  const navigate = useNavigate();
   const classes = useStyles();
 
   return (
