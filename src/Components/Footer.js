@@ -117,8 +117,8 @@ const Footer = () => {
           <FaYoutube />
         </Link>
       </div>
+      <Typography className={classes.text}>You can pay us by</Typography>
       <div className={classes.payments}>
-        {/* <Typography className={classes.text}>You can pay us by</Typography> */}
         <img src={mastercard} alt="mastercard" className={classes.img} />
         <img src={visa} alt="visa" className={classes.img} />
         <img src={amex} alt="amex" className={classes.img} />
