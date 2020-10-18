@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles, Typography } from '@material-ui/core'
 import contact from '../Images/contact.png'
+import useWebAnimations, { fadeIn } from '@wellyshen/use-web-animations'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,10 +37,20 @@ const useStyles = makeStyles((theme) => ({
 
 const ContactUs = () => {
     const classes = useStyles();
+    const { keyframes: main , timing: mainTime } = fadeIn;
+
+    const { ref } = useWebAnimations({
+        keyframes: main,
+        timing: {
+            ...mainTime,
+            delay: "1000",
+            easing: "ease",
+        }
+    })
 
     return (
         <div className={classes.root}>
-            <img src={contact} alt="contact" className={classes.img} />
+            <img src={contact} alt="contact" className={classes.img} ref={ref} />
             <Typography className={classes.text}>You Can Contact Us Anytime</Typography>
             <Typography className={classes.email}>Email: cerclestore@gmail.com</Typography>
             <Typography className={classes.phone}>Phone: +1 123 456 7890</Typography>
