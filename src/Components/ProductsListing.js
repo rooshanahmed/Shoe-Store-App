@@ -39,13 +39,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontFamily: "Comfortaa",
   },
-  cardContent:{
+  cardContent: {
     fontFamily: "Comfortaa",
   },
-  mainRoot:{
+  mainRoot: {
     // backgroundColor: "#3C52A3",
     display: "block",
-  }
+  },
 }));
 
 const ProductsListing = ({ data }) => {
@@ -83,10 +83,7 @@ const ProductsListing = ({ data }) => {
                         className={classes.cardImage}
                       />
                       <CardContent className={classes.cardContent}>
-                        <Typography
-                          gutterBottom
-                          variant="h6"
-                        >
+                        <Typography gutterBottom variant="h6">
                           {shoe.name.toUpperCase()}
                         </Typography>
                         <Typography>${shoe.price}</Typography>
