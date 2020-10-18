@@ -30,13 +30,18 @@ const Landing = () => {
   const classes = useStyles();
 
   useEffect(() => {
-    Aos.init({duration: 2000, easing: "ease"})
+    Aos.init({ duration: 2000, easing: "ease" });
   }, []);
 
   return (
     <div className={classes.root}>
       <h1 className={classes.text}>Giving value to your feet.</h1>
-      <img data-aos="fade-left" src={landing} alt="landing" className={classes.image} />
+      <img
+        data-aos="fade-left"
+        src={landing}
+        alt="landing"
+        className={classes.image}
+      />
     </div>
   );
 };
