@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "4px",
     whiteSpace: "nowrap",
     flexDirection: "column",
+    marginTop: "20px",
     "&:hover": {
       background: "#0467FB",
     },
