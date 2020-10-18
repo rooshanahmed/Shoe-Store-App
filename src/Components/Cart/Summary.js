@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     backgroundColor: "#1A2F43",
     color: "#fff",
-    '&:hover':{
+    "&:hover": {
       backgroundColor: "#fff",
       color: "black",
-    }
+    },
   },
   paddingStyle: {
     marginBottom: 10,

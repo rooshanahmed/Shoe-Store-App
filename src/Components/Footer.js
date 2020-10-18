@@ -9,9 +9,10 @@ import mastercard from "payment-icons/min/mono/mastercard.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#3C52A3",
+    backgroundColor: "black",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    color: "#fff",
   },
   heading: {
     fontSize: "24px",
@@ -26,11 +27,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     display: "flex",
     padding: "10px 20px",
-    fontSize: "16px",
+    fontSize: "18px",
     flexDirection: "column",
-    outline: "none",
-    border: "none",
-    borderRadius: "2px",
   },
   button: {
     background: "#4B59F7",
@@ -92,7 +90,18 @@ const Footer = () => {
         You can subscribe us any time
       </Typography>
       <form noValidate autoComplete="off" className={classes.form}>
-        <TextField placeholder="Enter Email" type="email" />
+        <TextField
+          placeholder="Enter Email"
+          type="email"
+          InputProps={{ disableUnderline: true }}
+          style={{
+            backgroundColor: "#fff",
+            color: "black",
+            borderRadius: 5,
+            width: "300px",
+            alignItems: "center",
+          }}
+        />
         <Button variant="contained" disableRipple className={classes.button}>
           Subscribe
         </Button>

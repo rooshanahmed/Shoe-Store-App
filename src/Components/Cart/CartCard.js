@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: "#fff",
-  }
+  },
 }));
 
 const CartCard = ({ product, removeItem }) => {
