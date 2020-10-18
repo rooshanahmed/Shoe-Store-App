@@ -26,34 +26,36 @@ const useStyles = makeStyles((theme) => ({
 const Summary = ({ productsCount, total, payment }) => {
   const classes = useStyles();
   const item = productsCount === 1 ? "Item" : "Items";
+
   return (
-    <Paper elevation={3} className={classes.paper}>
-      <Typography color="textSecondary">Total Items</Typography>
-      <Typography variant="h6" className={classes.paddingStyle}>
-        {productsCount}
-      </Typography>
-      <Typography color="textSecondary">Total Amount</Typography>
-      <Typography variant="h6" className={classes.paddingStyle}>
-        ${total}
-      </Typography>
-      <hr />
-      <Button
-        variant="contained"
-        color="primary"
-        endIcon={<ArrowForwardIcon />}
-        className={classes.btn}
-        onClick={() => {
-          swal(
-            "Checkout Successfully!",
-            `You have Purchased ${productsCount} ${item}!`,
-            "success"
-          );
-          payment();
-        }}
-      >
-        Check Out
-      </Button>
-    </Paper>
+    <div>
+      <Paper elevation={3} className={classes.paper}>
+        <Typography color="textSecondary">Total Items</Typography>
+        <Typography variant="h6" className={classes.paddingStyle}>
+          {productsCount}
+        </Typography>
+        <Typography color="textSecondary">Total Amount</Typography>
+        <Typography variant="h6" className={classes.paddingStyle}>
+          ${total}
+        </Typography>
+        <hr />
+        <Button
+          variant="contained"
+          endIcon={<ArrowForwardIcon />}
+          className={classes.btn}
+          onClick={() => {
+            swal(
+              "Checkout Successfully!",
+              `You have Purchased ${productsCount} ${item}!`,
+              "success"
+            );
+            payment();
+          }}
+        >
+          Check Out
+        </Button>
+      </Paper>
+    </div>
   );
 };
 

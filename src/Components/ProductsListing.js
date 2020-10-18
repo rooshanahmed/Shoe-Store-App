@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
   cardRoot: {
     maxWidth: "100%",
     margin: "0 auto",
+    backgroundColor: "black",
+    color: "#fff",
+    fontFamily: "Comfortaa",
   },
   cardContent:{
     fontFamily: "Comfortaa",

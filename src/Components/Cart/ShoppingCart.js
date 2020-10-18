@@ -5,6 +5,14 @@ import { GlobalContext } from "../../Context/GlobalContext";
 import Summary from "./Summary";
 
 const useStyles = makeStyles(() => ({
+  mainRoot: {
+    minHeight: "100vh",
+    backgroundColor: "#1A2F43",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column"
+  },
   root: {
     margin: "0 auto",
     maxWidth: 1200,
@@ -14,12 +22,14 @@ const useStyles = makeStyles(() => ({
     marginTop: 40,
     maxWidth: 200,
     textAlign: "center",
+    fontFamily: "Comfortaa",
   },
   empty: {
     margin: "0 auto",
     maxWidth: 300,
     marginTop: 100,
     textAlign: "center",
+    fontFamily: "Comfortaa",
   },
 }));
 
@@ -31,7 +41,7 @@ const ShopingCart = () => {
   const total = state.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div>
+    <div className={classes.mainRoot}>
       <Typography variant="h3" className={classes.heading}>
         Cart
       </Typography>

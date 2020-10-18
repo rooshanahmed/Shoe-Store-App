@@ -5,9 +5,10 @@ import {
   IconButton,
   makeStyles,
   Toolbar,
-  Badge
+  Badge,
+  Tooltip,
 } from "@material-ui/core";
-import ShoppingCartRoundedIcon from '@material-ui/icons/ShoppingCartRounded';
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import logo from "./logo-white.svg";
 import { useNavigate } from "react-router-dom";
 import { GlobalContext } from "../Context/GlobalContext";
@@ -44,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const navigate = useNavigate();
-  const classes = useStyles();
   const { state } = useContext(GlobalContext);
   const itemsCount = state.lenght;
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -87,16 +88,18 @@ const Header = () => {
           >
             Contact Us
           </Button>
-          <IconButton
-            className={classes.icon}
-            onClick={() => {
-              navigate("cart");
-            }}
-          >
-            <Badge badgeContent={itemsCount} color="secondary">
-            <ShoppingCartRoundedIcon />
-            </Badge>
-          </IconButton>
+          <Tooltip title="shopping cart">
+            <IconButton
+              className={classes.icon}
+              onClick={() => {
+                navigate("cart");
+              }}
+            >
+              <Badge badgeContent={itemsCount} color="primary">
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
     </div>
