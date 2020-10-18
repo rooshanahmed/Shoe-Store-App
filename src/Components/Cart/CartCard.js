@@ -9,12 +9,6 @@ import {
 import DeleteIcon from "@material-ui/icons/Delete";
 
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   display: "flex",
-  //   justifyContent: "space-between",
-  //   alignItems: "center",
-  //   flexDirection: "column",
-  // },
   productImage: {
     height: "150px",
     marginRight: "300px",
@@ -26,6 +20,17 @@ const useStyles = makeStyles((theme) => ({
   productName: {
     textTransform: "capitalize",
   },
+  textGrid: {
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    margin: "20px",
+    color: "#fff",
+  },
+  icon: {
+    color: "#fff",
+  }
 }));
 
 const CartCard = ({ product, removeItem }) => {
@@ -41,7 +46,7 @@ const CartCard = ({ product, removeItem }) => {
             className={classes.productImage}
           />
         </Grid>
-        <Grid item xs={7} sm={5}>
+        <Grid item xs={7} sm={5} className={classes.textGrid}>
           <Typography variant="h6" className={classes.productName}>
             {product.name}
           </Typography>
@@ -52,6 +57,7 @@ const CartCard = ({ product, removeItem }) => {
             <IconButton
               aria-label="Remove from Cart"
               onClick={() => removeItem(product)}
+              className={classes.icon}
             >
               <DeleteIcon />
             </IconButton>

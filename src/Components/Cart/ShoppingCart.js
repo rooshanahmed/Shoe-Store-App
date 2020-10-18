@@ -23,6 +23,7 @@ const useStyles = makeStyles(() => ({
     maxWidth: 200,
     textAlign: "center",
     fontFamily: "Comfortaa",
+    color: "#fff",
   },
   empty: {
     margin: "0 auto",
@@ -30,6 +31,7 @@ const useStyles = makeStyles(() => ({
     marginTop: 100,
     textAlign: "center",
     fontFamily: "Comfortaa",
+    color: "#fff",
   },
 }));
 

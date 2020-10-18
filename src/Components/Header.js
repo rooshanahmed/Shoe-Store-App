@@ -95,7 +95,7 @@ const Header = () => {
                 navigate("cart");
               }}
             >
-              <Badge badgeContent={itemsCount} color="primary">
+              <Badge badgeContent={itemsCount} color="secondary">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
