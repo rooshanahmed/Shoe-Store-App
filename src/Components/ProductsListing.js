@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Comfortaa",
   },
   mainRoot:{
-    backgroundColor: "#3C52A3",
+    // backgroundColor: "#3C52A3",
     display: "block",
   }
 }));
