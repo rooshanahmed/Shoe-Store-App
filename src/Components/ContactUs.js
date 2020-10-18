@@ -44,7 +44,7 @@ const ContactUs = () => {
         timing: {
             ...mainTime,
             delay: "1000",
-            easing: "ease",
+            easing: "ease-in",
         }
     })
 
