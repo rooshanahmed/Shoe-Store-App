@@ -7,8 +7,15 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     letterSpacing: "1px",
-    height: 200,
+    height: 350,
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    fontFamily: "Comfortaa",
     borderRadius: 10,
+    color: "#fff",
+    backgroundColor: "black",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "50vw",
       margin: "auto auto",
@@ -17,6 +24,15 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     marginTop: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    display: "flex",
+    backgroundColor: "#1A2F43",
+    color: "#fff",
+    '&:hover':{
+      backgroundColor: "#fff",
+      color: "black",
+    }
   },
   paddingStyle: {
     marginBottom: 10,
@@ -30,11 +46,11 @@ const Summary = ({ productsCount, total, payment }) => {
   return (
     <div>
       <Paper elevation={3} className={classes.paper}>
-        <Typography color="textSecondary">Total Items</Typography>
+        <Typography>Total Items</Typography>
         <Typography variant="h6" className={classes.paddingStyle}>
           {productsCount}
         </Typography>
-        <Typography color="textSecondary">Total Amount</Typography>
+        <Typography>Total Amount</Typography>
         <Typography variant="h6" className={classes.paddingStyle}>
           ${total}
         </Typography>
