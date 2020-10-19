@@ -3,7 +3,7 @@ import { makeStyles, Typography, TextField, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import visa from "payment-icons/min/single/visa.svg";
-import alipay from "payment-icons/min/single/alipay.svg";
+import paypal from "payment-icons/min/single/paypal.svg";
 import amex from "payment-icons/min/single/amex.svg";
 import mastercard from "payment-icons/min/single/mastercard.svg";
 
@@ -124,7 +124,7 @@ const Footer = () => {
         <img src={mastercard} alt="mastercard" className={classes.img} />
         <img src={visa} alt="visa" className={classes.img} />
         <img src={amex} alt="amex" className={classes.img} />
-        <img src={alipay} alt="alipay" className={classes.img} />
+        <img src={paypal} alt="paypal" className={classes.img} />
       </div>
     </div>
   );
