@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     display: "flex",
     minHeight: "100vh",
-    opacity: "85%",
+    // opacity: "85%",
     justifyContent: "center",
     alignItems: "center",
   },
