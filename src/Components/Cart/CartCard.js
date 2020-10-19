@@ -53,9 +53,9 @@ const CartCard = ({ product, removeItem }) => {
           <Typography gutterBottom>Price ${product.price}</Typography>
         </Grid>
         <Grid item xs={1} sm={2}>
-          <Tooltip title="Romove from Cart" placement="right-end">
+          <Tooltip title="Remove From Cart" placement="right-end">
             <IconButton
-              aria-label="Remove from Cart"
+              aria-label="Remove From Cart"
               onClick={() => removeItem(product)}
               className={classes.icon}
             >
