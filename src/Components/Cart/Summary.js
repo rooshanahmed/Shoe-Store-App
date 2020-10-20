@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     "&:hover": {
       backgroundColor: "#fff",
-      color: "black",
+      color: "#1A2F43",
     },
   },
   paddingStyle: {

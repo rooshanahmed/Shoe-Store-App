@@ -88,7 +88,7 @@ const Header = () => {
           >
             Contact Us
           </Button>
-          <Tooltip title="shopping cart">
+          <Tooltip title="Shopping Cart">
             <IconButton
               className={classes.icon}
               onClick={() => {
