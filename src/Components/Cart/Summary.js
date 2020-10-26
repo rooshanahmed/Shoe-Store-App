@@ -62,7 +62,7 @@ const Summary = ({ productsCount, total, payment }) => {
           onClick={() => {
             swal(
               "Checkout Successfully!",
-              `You have Purchased ${productsCount} ${item}!`,
+              `You Have Purchased ${productsCount} ${item}!`,
               "success"
             );
             payment();
