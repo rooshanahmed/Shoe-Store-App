@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     // backgroundColor: "#3C52A3",
+    backgroundColor: "#EFFAF1",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     display: "flex",
@@ -35,7 +36,9 @@ const Landing = () => {
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.text}>Giving value to your feet.</h1>
+      <h1 className={classes.text} data-aos="fade-right">
+        Giving value to your feet.
+      </h1>
       <img
         data-aos="fade-left"
         src={landing}
