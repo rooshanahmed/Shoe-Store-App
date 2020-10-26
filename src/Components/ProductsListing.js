@@ -75,7 +75,7 @@ const ProductsListing = ({ data }) => {
               <Grid item xs={12} sm={6} md={3} key={productId}>
                 <Link to={productId} className={classes.link}>
                   <Card className={classes.cardRoot} data-aos="fade-up">
-                    <CardActionArea>
+                    <CardActionArea disableTouchRipple>
                       <CardMedia
                         component="img"
                         image={shoe.images[0]}
