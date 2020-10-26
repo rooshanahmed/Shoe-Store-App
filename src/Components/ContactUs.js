@@ -60,7 +60,7 @@ const ContactUs = () => {
         Email: cerclestore@gmail.com
       </Typography>
       <Typography className={classes.phone}>Phone: +1 123 456 7890</Typography>
-      <Typography className={classes.address}>Address: 208 Main St Edward, NC 27821</Typography>
+      <Typography className={classes.address}>Address: 208 Main St Edward, NC 27821, USA</Typography>
     </div>
   );
 };
