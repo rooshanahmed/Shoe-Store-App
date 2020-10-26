@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#3C52A3",
+    // backgroundColor: "#3C52A3",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     display: "flex",
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontFamily: "Comfortaa",
     fontSize: "36px",
-    color: "#fff",
+    color: "black",
   },
 }));
 
