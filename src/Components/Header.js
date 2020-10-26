@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     marginLeft: "auto",
     display: "flex",
+    "&:hover": {
+      background: "none",
+    },
   },
 }));
 
@@ -93,6 +96,7 @@ const Header = () => {
           </Button>
           <Tooltip title="Shopping Cart">
             <IconButton
+              disableTouchRipple
               className={classes.icon}
               onClick={() => {
                 navigate("cart");
