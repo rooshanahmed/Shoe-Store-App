@@ -35,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "25px",
     color: "white",
     fontFamily: "Comfortaa",
+    "&:hover": {
+      background: "none",
+    },
   },
   icon: {
     color: "#fff",
