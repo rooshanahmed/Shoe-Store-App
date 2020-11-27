@@ -26,10 +26,17 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexGrow: "1",
+    // [theme.breakpoints.down("md")]: {
+    //   // display: "block",
+    //   // flexDirection: "column",
+    // },
   },
   appbarWapper: {
     width: "80%",
     margin: "0 auto",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
   },
   button: {
     marginLeft: "25px",
@@ -38,6 +45,10 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       background: "none",
     },
+    [theme.breakpoints.down("md")]: {
+      fontSize: "8px",
+      marginLeft: "0",
+    },
   },
   icon: {
     color: "#fff",
@@ -45,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     "&:hover": {
       background: "none",
+    },
+    [theme.breakpoints.down("md")]: {
+      marginLeft: "20px",
     },
   },
 }));

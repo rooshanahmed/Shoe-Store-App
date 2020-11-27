@@ -14,16 +14,31 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    maxWidth: "100%",
+    // maxWidth: "100%",
+    [theme.breakpoints.down("md")]:{
+      display: "flex",
+      flexDirection: "column",
+      width: "100%",
+    }
   },
   image: {
     height: "400px",
     marginLeft: "100px",
+    [theme.breakpoints.down("md")]:{
+      height: "250px",
+      alignItems: "center",
+      justifyContent: "center",
+      marginLeft: "0",
+    }
   },
   text: {
     fontFamily: "Comfortaa",
     fontSize: "36px",
     color: "black",
+    [theme.breakpoints.down("md")]:{
+      fontSize: "24px",
+      marginBottom: "80px",
+    }
   },
 }));
 

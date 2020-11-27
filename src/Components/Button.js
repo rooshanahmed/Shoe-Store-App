@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
       background: "linear-gradient(45deg, #35376F 30%, #090B3A 90%)",
       color: "#fff",
     },
+    [theme.breakpoints.down("md")]: {
+      marginBottom: "20px",
+    },
   },
 }));
 

@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: 20,
     fontFamily: "Comfortaa",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   cardRoot: {
     maxWidth: "100%",
@@ -38,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black",
     color: "#fff",
     fontFamily: "Comfortaa",
+    [theme.breakpoints.down("md")]: {
+      marginBottom: "10px",
+    },
   },
   cardContent: {
     fontFamily: "Comfortaa",

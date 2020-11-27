@@ -17,23 +17,38 @@ const useStyles = makeStyles((theme) => ({
   img: {
     width: "750px",
     height: "450px",
+    [theme.breakpoints.down("md")]: {
+      width: "420px",
+    },
   },
   text: {
     fontFamily: "Comfortaa",
     fontSize: "28px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   email: {
     fontFamily: "Comfortaa",
     fontSize: "20px",
     marginTop: "15px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   phone: {
     fontFamily: "Comfortaa",
     fontSize: "20px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   address: {
     fontFamily: "Comfortaa",
     fontSize: "20px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "12px",
+    },
   },
 }));
 
@@ -60,7 +75,9 @@ const ContactUs = () => {
         Email: cerclestore@gmail.com
       </Typography>
       <Typography className={classes.phone}>Phone: +1 123 456 7890</Typography>
-      <Typography className={classes.address}>Address: 208 Main St Edward, NC 27821, USA</Typography>
+      <Typography className={classes.address}>
+        Address: 208 Main St Edward, NC 27821, USA
+      </Typography>
     </div>
   );
 };

@@ -13,17 +13,33 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: "100%",
+    // maxWidth: "100%",
+    [theme.breakpoints.down("md")]:{
+      display: "flex",
+      flexDirection: "column",
+      // maxWidth: "100%",
+    }
   },
   title: {
     fontFamily: "Comfortaa",
     fontSize: "42px",
     color: "#fff",
+    [theme.breakpoints.down("md")]:{
+      fontSize: "28px",
+      marginTop: "200px",
+    }
   },
   image: {
     // marginLeft: "50px",
     transform: "rotate(-35deg)",
-    Height: "70px",
+    // height: "70px",
+    [theme.breakpoints.down("md")]:{
+      height: "340px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    }
   },
   button: {
     color: "#fff",

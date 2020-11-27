@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Comfortaa",
     color: "#fff",
     fontSize: "26px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   price: {
     padding: theme.spacing(2),
@@ -34,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Comfortaa",
     color: "#fff",
     fontSize: "26px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "18px",
+    },
   },
   title: {
     textTransform: "uppercase",
@@ -44,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Comfortaa",
     color: "#fff",
     fontSize: "16px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "14px",
+    },
   },
   description: {
     letterSpacing: "3px",
@@ -51,6 +60,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Comfortaa",
     color: "#fff",
     fontSize: "14px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "12px",
+    },
   },
   container: {
     maxWidth: "80%",
@@ -65,6 +77,11 @@ const useStyles = makeStyles((theme) => ({
   grd: {
     marginTop: 50,
   },
+  paper: {
+    [theme.breakpoints.down("md")]: {
+      marginTop: "60px",
+    },
+  },
 }));
 
 const ProductDetails = ({ data }) => {
@@ -77,7 +94,7 @@ const ProductDetails = ({ data }) => {
     <div className={classes.root}>
       <Grid container spacing={0} justify="center" className={classes.grd}>
         <Grid item xs={8} sm={5} md={6}>
-          <Paper>
+          <Paper className={classes.paper}>
             <img
               src={dataItem.images[val]}
               alt={dataItem.name}

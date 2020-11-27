@@ -4,7 +4,7 @@ import CartCard from "./CartCard";
 import { GlobalContext } from "../../Context/GlobalContext";
 import Summary from "./Summary";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   mainRoot: {
     minHeight: "100vh",
     backgroundColor: "#1A2F43",
@@ -24,6 +24,9 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
     fontFamily: "Comfortaa",
     color: "#fff",
+    [theme.breakpoints.down("md")]:{
+      marginTop: "30px",
+    }
   },
   empty: {
     margin: "0 auto",

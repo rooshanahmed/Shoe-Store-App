@@ -27,10 +27,21 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     margin: "20px",
     color: "#fff",
+    [theme.breakpoints.down("md")]:{
+      fontSize: "10px",
+      margin: "auto",
+      display: "flex",
+      marginTop: "30px",
+    }
   },
   icon: {
     color: "#fff",
   },
+  root: {
+    [theme.breakpoints.down("md")]:{
+      width: "100%",
+    }
+  }
 }));
 
 const CartCard = ({ product, removeItem }) => {

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     backgroundColor: "black",
     [theme.breakpoints.down("sm")]: {
-      maxWidth: "50vw",
+      width: "280px",
       margin: "auto auto",
       marginTop: 20,
     },
