@@ -5,12 +5,14 @@ import { GlobalContext } from "../Context/GlobalContext";
 const useStyles = makeStyles((theme) => ({
   btn: {
     margin: "0 auto",
+    marginTop: "30px",
+    width: "250px",
     display: "block",
-    background: "black",
+    border: "1px solid #fff",
     color: "#fff",
     "&:hover": {
-      background: "#1A2F43",
-      color: "#fff",
+      background: "linear-gradient(45deg, #8FA07C 30%, #346F4D 90%)",
+      color: "black",
     },
   },
 }));
@@ -22,7 +24,7 @@ const CartButton = ({ dataItem }) => {
 
   return !isTrue ? (
     <Button
-      variant="contained"
+      disableElevation
       onClick={() => addItem(dataItem)}
       className={classes.btn}
       disableRipple
@@ -38,7 +40,7 @@ const CartButton = ({ dataItem }) => {
       arrow
     >
       <Button
-        variant="contained"
+        disableElevation
         onClick={() => addItem(dataItem)}
         className={classes.btn}
         disableRipple
