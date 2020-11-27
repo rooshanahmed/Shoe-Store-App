@@ -23,15 +23,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
+    width: "200px",
     marginTop: 30,
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
-    backgroundColor: "#1A2F43",
+    border: "1px solid #1A2F43",
     color: "#fff",
     "&:hover": {
-      backgroundColor: "#fff",
-      color: "#1A2F43",
+      background: "linear-gradient(45deg, #35376F 30%, #090B3A 90%)",
+      color: "#fff",
     },
   },
   paddingStyle: {
@@ -56,7 +57,8 @@ const Summary = ({ productsCount, total, payment }) => {
         </Typography>
         <hr />
         <Button
-          variant="contained"
+          disableElevation
+          disableTouchRipple
           endIcon={<ArrowForwardIcon />}
           className={classes.btn}
           onClick={() => {
