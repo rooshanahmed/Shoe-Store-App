@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import logo from "./logo-white.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { GlobalContext } from "../Context/GlobalContext";
 
 const useStyles = makeStyles((theme) => ({
@@ -73,14 +73,13 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWapper}>
-          <img
-            src={logo}
-            alt="logo"
-            className={classes.logo}
-            onClick={() => {
-              navigate("/");
-            }}
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="logo"
+              className={classes.logo}
+            />
+          </Link>
           <Button
             disableTouchRipple
             className={classes.button}
