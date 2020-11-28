@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #fff",
     color: "#fff",
     "&:hover": {
-      background: "linear-gradient(45deg, #35376F 30%, #090B3A 90%)",
+      background: "linear-gradient(45deg, #3D1515 30%, #151753 90%)",
       color: "#fff",
     },
     [theme.breakpoints.down("md")]: {
