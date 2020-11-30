@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@wellyshen/use-web-animations": "^0.5.7",
     "aos": "^2.3.4",
+    "firebase": "^8.1.1",
     "history": "^5.0.0",
     "payment-icons": "^1.2.1",
     "react": "^16.13.1",

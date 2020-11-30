@@ -11,8 +11,15 @@ import data from "./data";
 import ContactUs from "./Components/ContactUs";
 import ScrollToTop from "./Components/ScrollToTop";
 import ShoppingCart from "./Components/Cart/ShoppingCart";
+import firebase from "./Firebase";
 
 function App() {
+  const messaging = firebase.messaging();
+
+  messaging.requestPermission().then(() => {
+    return messaging.getToken();
+  });
+
   return (
     <div>
       <CssBaseline />
