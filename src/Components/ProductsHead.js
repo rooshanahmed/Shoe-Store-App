@@ -5,10 +5,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/shoes72.png"})`,
     backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
     backgroundSize: "cover",
+    position: "relative",
     display: "flex",
     minHeight: "100vh",
-    // opacity: "85%",
     justifyContent: "center",
     alignItems: "center",
   },

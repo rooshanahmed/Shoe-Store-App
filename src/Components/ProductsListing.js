@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
-    marginTop: 20,
+    marginTop: 50,
     fontFamily: "Comfortaa",
     [theme.breakpoints.down("md")]: {
       fontSize: "18px",

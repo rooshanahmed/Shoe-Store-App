@@ -46,7 +46,7 @@ const Summary = ({ productsCount, total, payment }) => {
 
   return (
     <div>
-      <Paper elevation={3} className={classes.paper}>
+      <Paper elevation={8} className={classes.paper}>
         <Typography>Total Items</Typography>
         <Typography variant="h6" className={classes.paddingStyle}>
           {productsCount}
