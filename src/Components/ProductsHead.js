@@ -8,10 +8,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundAttachment: "fixed",
     backgroundSize: "cover",
     position: "relative",
+    width: "95%",
     display: "flex",
     minHeight: "100vh",
     justifyContent: "center",
     alignItems: "center",
+    transform: "scale(1.1)",
   },
 }));
 
