@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
-import contact from "../Images/contact.png";
+import contact from "../Images/contact.webp";
 import useWebAnimations, { fadeIn } from "@wellyshen/use-web-animations";
 
 const useStyles = makeStyles((theme) => ({
@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    // backgroundColor: "#1A2F43",
     color: "#fff",
     minHeight: "100vh",
     flexDirection: "column",
